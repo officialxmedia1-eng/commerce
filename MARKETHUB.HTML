@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> The Student Marketplace</title>
+ 
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+  <header>
+    <h1> The Student Market Hub</h1>
+    <nav>
+      <a href="MARKETHUB.HTML">Home</a>
+      <a href="https:wa.me/233535697883">Contact</a>
+	<button onClick="window.history.back()">Sign Out</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="marketplace">
+      <h2>Available Items</h2>
+      <div class="item-list">
+        <div class="item">
+          <h3>Textbooks Bundle</h3>
+          <p>Used textbooks for Econ101 & Stats201.</p>
+    <div class="slideshow-container">   
+		<img class = "slide" src="WhatsApp Image 2025-08-03 at 09.42.32.jpeg" alt="Image 1">
+    <img class = "slide" src="WhatsApp Image 2025-08-03 at 09.42.35.jpeg" alt="Image 2">
+    <img class = "slide" src="WhatsApp Image 2025-08-03 at 09.42.33.jpeg" alt="Image 3">
+    </div>
+          <button>Contact Seller</button>
+        </div>
+        <div class="item">
+          <h3>Dorm Essentials</h3>
+          <p>Desk lamp and desk fan. All in good condition.</p>
+          <button onclick="window.location.href='https://wa.me/233535697883'">Contact Seller</button>
+        </div>
+	<div class="item">
+	<h4>Dorm Essentials</h4>
+	<p>Mini fridge</p>
+	<button onclick="window.location.href='https://wa.me/233535697883'">Contact Seller</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; L200 ITB GROUP9</p>
+    <marquee> GROUP 9 GILBERT ASAMOAH||</marquee>
+  </footer>
+
+  <script src="script.js">document.querySelectorAll("button").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      alert("Seller contacted! 🚀");
+  });
+  });
+  
+  </script>
+</body>
+</html>

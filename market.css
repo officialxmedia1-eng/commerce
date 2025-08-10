@@ -1,0 +1,92 @@
+  * {box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+.background {
+  background-image: url('DJI_0033.jpg'); /* Replace with your background */
+  background-size: cover;
+  background-position: center;
+
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 4s ease-in-out;
+	display: flex;
+    justify-content: center;
+    align-items:center;	
+}
+@keyframes fadeIn{
+	0%{opacity:0.1;}
+	100%{opacity:1; }
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.form-image{
+    display:block;
+    margin: 0 auto 0px;
+    margin-bottom:05px;
+    height: 110px;
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.login-form input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #34495e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.login-form.forgot-password {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 0.9em;
+  color: #ddd;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.login-form.forgot-password:hover {
+  text-decoration: underline;
+}
